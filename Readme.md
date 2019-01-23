@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Лукичёв](https://up.htmlacademy.ru/htmlcss/24/user/309093).
-* Наставник: [Андрей Чепулис].(https://htmlacademy.ru/profile/id240237)
+* Наставник: [Андрей Чепулис](https://htmlacademy.ru/profile/id240237)
 
 ---
 
