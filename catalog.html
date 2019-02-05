@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Каталог товаров</title>
+    <title>Техномарт - Каталог товаров</title>
 </head>
 
 <body>
     <header>
         <div class="header-top">
-            <a class="logo" href="#">техномарт</a>
+            <a class="logo" href="index.html" title="На главную страницу">техномарт</a>
             <input type="text" name="main-search" value="Поиск:">
             <a class="header-top-btn btn-bookmarks" href="#">Закладки: 0</a>
             <a class="header-top-btn btn-cart" href="#">Корзина: 10</a>
@@ -18,7 +18,7 @@
         <div class="header-mid">
             <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
             <div class="header-contacts">
-                <a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55
+                <a class="header-tel" href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55
                 </a>
                 <p class="header-adress">
                     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -33,7 +33,7 @@
         <div class="header-bot">
             <nav class="main-nav">
                 <ul>
-                    <li class="main-nav-item"><a href="#">Главная</a></li>
+                    <li class="main-nav-item"><a href="index.html">Главная</a></li>
                     <li class="main-nav-item"><a href="#">Каталог</a></li>
                     <li class="main-nav-item"><a href="#">Компания</a></li>
                     <li class="main-nav-item"><a href="#">Новости</a></li>
@@ -46,7 +46,7 @@
     </header>
     <main>
         <ul class="breadcrumbs-main">
-            <li><a href="#"><span class="breadcrumbs-home"></span></a></li>
+            <li><a href="index.html" title="На главную страницу"></label><span class="breadcrumbs-home"></span></a></li>
             <li><a href="#">каталог</a></li>
             <li><a href="#">инструмент</a></li>
             <li><a>перфораторы</a></li>
@@ -54,20 +54,26 @@
         <section class="catalog">
             <h2 class="catalog-name">перфораторы</h2>
             <div class="catalog-filter">
-                <form action="get">
+                <form action="https://echo.htmlacademy.ru">
                     <strong>фильтр:</strong>
-                    <b>цена:</b>
-                    <input type="range">
-                    <b>производители:</b>
-                    <input type="checkbox">bosch</label>
-                    <input type="checkbox">интерскол</label>
-                    <input type="checkbox">makita</label>
-                    <input type="checkbox">dewalt</label>
-                    <input type="checkbox">hitachi</label>
-                    <b>питание:</b>
-                    <input type="radio" name="radio">аккумуляторные</label>
-                    <input type="radio" name="radio">сетевые</label>
-                    <input type="submit" name="submit" id="submit" value="показать">
+                    <fieldset>
+                        <legend>цена:</legend>
+                        <input type="range">
+                    </fieldset>
+                    <fieldset>
+                        <legend>производители:</legend>
+                        <input type="checkbox" name="checkbox-bosch" id="checkbox-bosch" checked><label for="checkbox-bosch">bosch</label>
+                        <input type="checkbox" name="checkbox-interscol" id="checkbox-interscol"><label for="checkbox-interscol">интерскол</label>
+                        <input type="checkbox" name="checkbox-makita" id="checkbox-makita" checked><label for="checkbox-makita">makita</label>
+                        <input type="checkbox" name="checkbox-dewalt" id="checkbox-dewalt"><label for="checkbox-dewalt">dewalt</label>
+                        <input type="checkbox" name="checkbox-hitachi" id="checkbox-hitachi"><label for="checkbox-hitachi">hitachi</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>питание:</legend>
+                        <input type="radio" name="radio-accumulators" id="radio-accumulators" checked><label for="radio-accumulators">аккумуляторные</label>
+                        <input type="radio" name="radio-wired" id="radio-wired"><label for="radio-wired">сетевые</label>
+                    </fieldset>
+                        <input type="submit" name="submit" id="submit" value="показать">
                 </form>
             </div>
             <div class="catalog-sort"></div>
@@ -132,7 +138,7 @@
     <footer>
         <div class="footer-top">
             <div>
-                <a class="footer-logo" href=""></a>
+                <a class="footer-logo" href="index.html" title="На главную страницу"></a>
                 <nav class="footer-nav">
                     <ul>
                         <li><a href="">Компания</a></li>
@@ -154,14 +160,20 @@
         <div class="footer-bot">
             <p class="copyright">2010-2019 Компания "Техномарт" Все права защищены</p>
             <p class="footer-socials">
-                <a href="#" title="ВКонтакте"></a>
-                <a href="#" title="Facebook"></a>
-                <a href="#" title="Instagram"></a>
+                <a href="#" title="Мы во ВКонтакте"><span class="visually-hidden">Мы во ВКонтакте</span></a>
+                <a href="#" title="Мы на Фейсбук"><span class="visually-hidden">Мы на Фейсбук</span></a>
+                <a href="#" title="Мы в Инстаграм"><span class="visually-hidden">Мы в Инстаграм</span></a>
             </p>
             <p class="footer-mail">Обратная связь: <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
             <p class="footer-academy">Разработано -<a href="http://www.htmlacademy.ru" target="_blank">htmlacademy.ru</a></p>
         </div>
     </footer>
+    <div class="popup popup-cart">
+        <strong>Товар добавлен в корзину!</strong>
+        <a href="#" class="btn popup-cart-order">оформить заказ</a>
+        <button class="popup-cart-continue">продолжить покупки</button>
+        <button class="popup-close-btn popup-close-btn-cart"><span>закрыть</span></button>
+    </div>
 </body>
 
 </html>
