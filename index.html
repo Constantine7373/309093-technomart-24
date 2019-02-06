@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>HTML Academy: Техномарт</title>
 </head>
@@ -9,7 +10,7 @@
   <header>
     <div class="header-top">
       <a class="logo" href="index.html" title="Обновить страницу">техномарт</a>
-      <input type="text" name="main-search" value="Поиск:">
+      <input class="header-top-search" type="text" name="main-search" value="Поиск:">
       <a class="header-top-btn btn-bookmarks" href="#">Закладки: 0</a>
       <a class="header-top-btn btn-cart" href="#">Корзина: 0</a>
       <a class="header-top-btn btn-order" href="#">Оформить заказ</a>
@@ -44,72 +45,72 @@
   </header>
   <main>
     <section class="categories">
-      <h2 class="visualy-hidden">Категории товаров</h2>
+      <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories-list-leftcol">
-        <li class="categories-item-materials">
+        <li class="categories-item categories-item-materials">
           <h3>Материалы</h3>
-          <a href="#" class="categories-item-btn"></a>
+          <a href="#" class="categories-item-btn">на любой вкус</a>
         </li>
-        <li class="categories-item-tools">
+        <li class="categories-item categories-item-tools">
           <h3>Инструмент</h3>
-          <a href="#" class="categories-item-btn"></a>
+          <a href="#" class="categories-item-btn">на все случаи</a>
         </li>
         <li class="categories-slider"></li>
       </ul>
       <ul class="categories-list-rightcol">
-        <li class="categories-item-machines">
+        <li class="categories-item categories-item-machines">
           <h3>Техника</h3>
-          <a href="#" class="categories-item-btn"></a>
+          <a href="#" class="categories-item-btn">для стройки</a>
         </li>
-        <li class="categories-item-sale">
+        <li class="categories-item categories-item-sale">
           <h3>Скидки 50%</h3>
-          <a href="#" class="categories-item-btn"></a>
+          <a href="#" class="categories-item-btn">на 350 товаров</a>
         </li>
-        <li class="categories-item-delivery">
+        <li class="categories-item categories-item-delivery">
           <h3>Доставка</h3>
-          <a href="#" class="categories-item-btn"></a>
+          <a href="#" class="categories-item-btn">бесплатно</a>
         </li>
       </ul>
     </section>
     <section class="popular-goods">
-      <h2 class="visualy-hidden">Популярные товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
       <p>
-        <b>популярные товары:</b>
+        <b class="popular-goods-title">популярные товары:</b>
         <a class="popular-goods-all red-btn" href="#">все популярные товары</a>
       </p>
       <ul class="popular-goods-list">
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 9000">
-          <h3>Перворатор BOSCH 9000</h3>
+          <h3>Перфоратор BOSCH 9000</h3>
           <span class="goods-old-price">32500 р.</span>
           <a class="popular-goods-btn red-btn" href="#"></a>
         </li>
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 3000">
-          <h3>Перворатор BOSCH 3000</h3>
+          <h3>Перфоратор BOSCH 3000</h3>
           <span class="goods-old-price">22500 р.</span>
           <a class="popular-goods-btn red-btn" href="#"></a>
         </li>
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 6000">
-          <h3>Перворатор BOSCH 6000</h3>
+          <h3>Перфоратор BOSCH 6000</h3>
           <span class="goods-old-price">30500 р.</span>
           <a class="popular-goods-btn red-btn" href="#"></a>
         </li>
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 2000">
-          <h3>Перворатор BOSCH 2000</h3>
+          <h3>Перфоратор BOSCH 2000</h3>
           <span class="goods-old-price"></span>
           <a class="popular-goods-btn red-btn" href="#"></a>
         </li>
       </ul>
     </section>
     <section class="popular-brands">
-      <h2 class="visualy-hidden">популярные производители</h2>
-      <div>
-        <p>популярные производители:</p>
+      <h2 class="visually-hidden">популярные производители</h2>
+      <p>
+        <b class="popoular-brands-title">популярные производители:</b>
         <a class="popular-brands-all red-btn" href="#">все производители</a>
-      </div>
+      </p>
       <ul class="popular-brands-list">
         <li class="popular-brands-item">
           <a href=""><img src="http://placehold.it/150x100" alt="BOSCH"></a>
@@ -138,7 +139,7 @@
       </ul>
     </section>
     <section class="service">
-      <h2>сервисы</h2>
+      <h2 class="service-headline">сервисы</h2>
       <p class="service-title">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div class="service-slider">
         <input class="service-btn service-btn-delivery" type="radio">Доставка</input>
@@ -164,9 +165,10 @@
       </div>
     </section>
     <section class="about-us">
+    	<h2 class="visually-hidden"></h2>
       <div class="about-company">
-        <p>компания "техномарт"</p>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+        <p class="about-company-title">компания "техномарт"</p>
+        <p class="about-company-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями: </p>
         <ul class="partners-list">
@@ -177,8 +179,8 @@
         <a class="red-btn" href="#">подробнее о компании</a>
       </div>
       <div class="about-contacts">
-        <p>контакты</p>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <p class="about-contacts-title">контакты</p>
+        <p class="about-contacts-description">Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#"><img src="img/find-us-map_300x158.jpg" width="300" height="158" alt="Схема подъезда"></a>
         <a class="red-btn" href="#">заблудились? напишите нам</a>
       </div>
