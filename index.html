@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>HTML Academy: Техномарт</title>
 </head>
+
 <body>
   <header>
     <div class="header-top">
@@ -16,17 +18,16 @@
       <a class="header-top-btn btn-order" href="#">Оформить заказ</a>
     </div>
     <div class="header-mid">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <h1 class="header-mid-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="header-contacts">
-        <a class="header-tel" href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55
-				</a>
+        <a class="header-tel" href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55</a>
         <p class="header-adress">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
       </div>
       <ul class="user-menu">
-        <li><a class="login-enter" href="#">Войти</a></li>
-        <li><a class="login-reg" href="#">Регистрация</a></li>
+        <li><a class="user-menu-btn login-enter" href="#">Войти</a></li>
+        <li><a class="user-menu-btn login-reg" href="#">Регистрация</a></li>
       </ul>
     </div>
     <div class="header-bot">
@@ -76,32 +77,32 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <p>
         <b class="popular-goods-title">популярные товары:</b>
-        <a class="popular-goods-all red-btn" href="#">все популярные товары</a>
+        <a class="popular-goods-all primary-btn" href="#">все популярные товары</a>
       </p>
       <ul class="popular-goods-list">
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 9000">
           <h3>Перфоратор BOSCH 9000</h3>
           <span class="goods-old-price">32500 р.</span>
-          <a class="popular-goods-price red-btn" href="#">25500 р.</a>
+          <a class="popular-goods-price primary-btn" href="#">25500 р.</a>
         </li>
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 3000">
           <h3>Перфоратор BOSCH 3000</h3>
           <span class="goods-old-price">22500 р.</span>
-          <a class="popular-goods-price red-btn" href="#">15500 р.</a>
+          <a class="popular-goods-price primary-btn" href="#">15500 р.</a>
         </li>
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 6000">
           <h3>Перфоратор BOSCH 6000</h3>
           <span class="goods-old-price">30500 р.</span>
-          <a class="popular-goods-price red-btn" href="#">25500 р.</a>
+          <a class="popular-goods-price primary-btn" href="#">25500 р.</a>
         </li>
         <li class="popular-goods-item">
           <img src="http://placehold.it/150x100" alt="BFG 2000">
           <h3>Перфоратор BOSCH 2000</h3>
           <span class="goods-old-price"></span>
-          <a class="popular-goods-price red-btn" href="#">12500 р.</a>
+          <a class="popular-goods-price primary-btn" href="#">12500 р.</a>
         </li>
       </ul>
     </section>
@@ -109,7 +110,7 @@
       <h2 class="visually-hidden">популярные производители</h2>
       <p>
         <b class="popoular-brands-title">популярные производители:</b>
-        <a class="popular-brands-all red-btn" href="#">все производители</a>
+        <a class="popular-brands-all primary-btn" href="#">все производители</a>
       </p>
       <ul class="popular-brands-list">
         <li class="popular-brands-item">
@@ -165,7 +166,7 @@
       </div>
     </section>
     <section class="about-us">
-    	<h2 class="visually-hidden"></h2>
+      <h2 class="visually-hidden"></h2>
       <div class="about-company">
         <p class="about-company-title">компания "техномарт"</p>
         <p class="about-company-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -176,13 +177,13 @@
           <li class="partners-list-item">Автотрейдинг</li>
           <li class="partners-list-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="red-btn" href="#">подробнее о компании</a>
+        <a class="primary-btn" href="#">подробнее о компании</a>
       </div>
       <div class="about-contacts">
         <p class="about-contacts-title">контакты</p>
         <p class="about-contacts-description">Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#"><img src="img/find-us-map_300x158.jpg" width="300" height="158" alt="Схема подъезда"></a>
-        <a class="red-btn" href="#">заблудились? напишите нам</a>
+        <a class="primary-btn" href="#">заблудились? напишите нам</a>
       </div>
     </section>
   </main>
@@ -243,7 +244,10 @@
       <button class="popup-close-btn popup-close-btn-write-us"><span>закрыть</span></button>
     </form>
   </div>
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+  </script>
 </body>
 
 </html>
