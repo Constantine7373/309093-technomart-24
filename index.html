@@ -11,13 +11,14 @@
 <body>
   <header>
     <div class="header-top">
-      <a class="header-logo" href="index.html" title="Обновить страницу">техномарт</a>
-      <input class="header-top-search" type="text" name="main-search" placeholder="Поиск:">
-      <a class="header-top-btn btn-bookmarks" href="#">Закладки: 0</a>
-      <a class="header-top-btn btn-cart" href="#">Корзина: 0</a>
-      <a class="header-top-btn btn-order" href="#">Оформить заказ</a>
+      <div class="container">
+        <a class="header-logo" href="index.html" title="Обновить страницу">техномарт</a>
+        <input class="header-top-search" type="text" name="main-search" placeholder="Поиск:">
+        <a class="header-top-btn btn-bookmarks" href="#">Закладки: 0</a>
+        <a class="header-top-btn btn-cart" href="#">Корзина: 0</a>
+        <a class="header-top-btn btn-order" href="#">Оформить заказ</a></div>
     </div>
-    <div class="header-mid">
+    <div class="container header-mid">
       <h1 class="header-mid-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="header-contacts">
         <a class="header-tel" href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55</a>
@@ -30,7 +31,7 @@
         <li><a class="user-menu-btn login-reg" href="#">Регистрация</a></li>
       </ul>
     </div>
-    <div class="header-bot">
+    <div class="container header-bot">
       <nav class="main-nav">
         <ul>
           <li class="main-nav-item"><a href="#">Главная</a></li>
@@ -56,7 +57,7 @@
           <h3>Инструмент</h3>
           <a href="#" class="categories-item-btn">на все случаи</a>
         </li>
-        <li class="categories-slider"></li>
+        <li class="categories-item categories-slider"></li>
       </ul>
       <ul class="categories-list-rightcol">
         <li class="categories-item categories-item-machines">
@@ -73,69 +74,69 @@
         </li>
       </ul>
     </section>
-    <section class="popular-goods">
+    <section class="container popular-goods">
       <h2 class="visually-hidden">Популярные товары</h2>
-      <p>
+      <p class="popular-goods-intro">
         <b class="popular-goods-title">популярные товары:</b>
         <a class="popular-goods-all primary-btn" href="#">все популярные товары</a>
       </p>
       <ul class="popular-goods-list">
         <li class="popular-goods-item">
-          <img src="http://placehold.it/150x100" alt="BFG 9000">
-          <h3>Перфоратор BOSCH 9000</h3>
+          <img src="img/perforator_9000_218x170.jpg" width="218" height="170" alt="BFG 9000">
+          <h3>Перфоратор BOSCH BFG 9000</h3>
           <span class="goods-old-price">32500 р.</span>
           <a class="popular-goods-price primary-btn" href="#">25500 р.</a>
         </li>
         <li class="popular-goods-item">
-          <img src="http://placehold.it/150x100" alt="BFG 3000">
-          <h3>Перфоратор BOSCH 3000</h3>
+          <img src="img/perforator_1_218x170.jpg" width="218" height="170" alt="BFG 3000">
+          <h3>Перфоратор BOSCH BFG 3000</h3>
           <span class="goods-old-price">22500 р.</span>
           <a class="popular-goods-price primary-btn" href="#">15500 р.</a>
         </li>
         <li class="popular-goods-item">
-          <img src="http://placehold.it/150x100" alt="BFG 6000">
-          <h3>Перфоратор BOSCH 6000</h3>
+          <img src="img/perforator_2_218x170.jpg" width="218" height="170" alt="BFG 6000">
+          <h3>Перфоратор BOSCH BFG 6000</h3>
           <span class="goods-old-price">30500 р.</span>
           <a class="popular-goods-price primary-btn" href="#">25500 р.</a>
         </li>
         <li class="popular-goods-item">
-          <img src="http://placehold.it/150x100" alt="BFG 2000">
-          <h3>Перфоратор BOSCH 2000</h3>
+          <img src="img/perforator_1_218x170.jpg" width="218" height="170" alt="BFG 2000">
+          <h3>Перфоратор BOSCH BFG 2000</h3>
           <span class="goods-old-price"></span>
           <a class="popular-goods-price primary-btn" href="#">12500 р.</a>
         </li>
       </ul>
     </section>
-    <section class="popular-brands">
+    <section class="container popular-brands">
       <h2 class="visually-hidden">популярные производители</h2>
-      <p>
-        <b class="popoular-brands-title">популярные производители:</b>
+      <p class="popular-goods-intro">
+        <b class="popular-brands-title">популярные производители:</b>
         <a class="popular-brands-all primary-btn" href="#">все производители</a>
       </p>
       <ul class="popular-brands-list">
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="BOSCH"></a>
+          <a href="#"><img src="img/bosch_126x37.jpg" width="126" height="37" alt="BOSCH"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="Makita"></a>
+          <a href="#"><img src="img/makita_123x40.jpg" width="123" height="40" alt="Makita"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="DeWalt"></a>
+          <a href="#"><img src="img/dewalt_146x44.jpg" width="144" height="44" alt="DeWalt"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="ИНТЕРСКОЛ"></a>
+          <a href="#"><img src="img/interscol_200x88.jpg" width="200" height="88" alt="ИНТЕРСКОЛ"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="HITACHI"></a>
+          <a href="#"><img src="img/hitachi_169x31.jpg" width="169" height="31" alt="HITACHI"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="LG"></a>
+          <a href="#"><img src="img/lg_121x73.jpg" width="121" height="73" alt="LG"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="AEG"></a>
+          <a href="#"><img src="img/aeg_151x96.jpg" width="151" height="96" alt="AEG"></a>
         </li>
         <li class="popular-brands-item">
-          <a href=""><img src="http://placehold.it/150x100" alt="Metabo"></a>
+          <a href="#"><img src="img/metabo_204x69.jpg" width="204" height="69" alt="Metabo"></a>
         </li>
       </ul>
     </section>
