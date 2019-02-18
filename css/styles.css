@@ -329,6 +329,7 @@ a {
 .service-title,
 .service-slider-description p,
 .about-company-description,
+.about-company-propose,
 .about-contacts-description {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
@@ -357,10 +358,6 @@ a {
   line-height: 20px;
 }
 
-.footer-top {
-  background-color: #32425c;
-}
-
 .footer-nav-item a,
 .footer-proposal-item a {
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -368,6 +365,16 @@ a {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
+}
+
+.footer-mid-adress,
+.footer-mid-tel {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: #ffffff;  
 }
 
 .footer-nav-item a {
@@ -402,22 +409,10 @@ a {
   line-height: 18px;
 }
 
-.footer-socials a {
-  background-color: #000;
-}
-
 .footer-socials a:hover,
 .footer-socials a:focus,
 .footer-socials a:active {
   background-color: #ee3643;
-}
-
-.footer-socials-vk {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url(../img/icon-vk.svg) no-repeat 100% 0;
-
 }
 
 .footer-mail a,
@@ -903,6 +898,197 @@ main {
 
 #credit:checked ~ .service-slider-credit {
   display: block;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  min-height: 536px;
+}
+
+.about-company {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-company-title,
+.about-contacts-title {
+  margin-bottom: 38px;
+}
+
+.about-company-description {
+  width: 520px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.about-company-propose {
+  width: 390px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.partners-list {
+  margin: 0;
+  margin-left: 35px;
+  margin-bottom: 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.partners-list-item {
+  position: relative;
+  margin: 12px 0;
+}
+
+.partners-list-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:-35px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+.about-company-btn {
+  line-height: 38px;
+  text-align: center;
+  width: 220px;
+}
+
+.about-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-contacts-description {
+  width: 180px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.about-contacts-map {
+  margin-bottom: 40px;
+}
+.about-contacts-btn {
+  line-height: 38px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #32425c;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #32425c;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 65px;
+  text-align: center;
+  border-bottom: 5px solid #b52933;
+}
+
+.footer-nav {
+  margin-left: auto;
+  align-self: center;
+}
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-mid  {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  background-color: #32425c;
+}
+
+.footer-mid-adress {
+  margin: 0;
+  width: 330px;
+}
+
+.footer-proposal-list {
+  display: flex;
+  justify-content: space-between;
+  width: 525px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;  
+}
+
+.footer-bot {
+  display: flex;
+  justify-content: center;
+  min-height: 108px;
+  background-color: #293449;
+}
+
+.footer-bot .container {
+  display: flex;
+  align-self: center;
+}
+
+.footer-copyright {
+  width: 230px;
+}
+
+.footer-socials {
+  display: flex;
+  margin-left: 150px;
+  margin-right: auto;
+}
+
+.footer-socials a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #212a3a;
+}
+
+.footer-socials-vk {
+  background-image: url(../img/icon-vk.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer-socials-fb {
+  background-image: url(../img/icon-fb.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer-socials-instagram {
+  background-image: url(../img/icon-insta.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer-mail {
+  width: 140px;
+}
+
+.footer-academy {
+  width: 110px;
+  margin-left: 50px;
 }
 
 /*-----------end of index.html-----------*/
