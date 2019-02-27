@@ -14,8 +14,8 @@
       <div class="container">
         <a class="header-logo" href="index.html" title="Обновить страницу"><img src="img/logo-technomart.svg" alt="техномарт"></a>
         <form class="header-top-search">
-          <button class="header-top-search-submit" type="submit"></button>
           <input class="header-top-search-input" type="text" name="main-search" placeholder="Поиск:">
+          <button class="header-top-search-submit" type="submit"></button>
         </form>
         <a class="header-top-btn btn-bookmarks" href="#">Закладки: 0</a>
         <a class="header-top-btn btn-cart" href="#">Корзина: 0</a>
@@ -33,7 +33,8 @@
             </p>
           </div>
           <ul class="user-menu">
-            <li class="user-menu-btn login-enter"><a href="#">Войти</a></li>
+            <li class="user-menu-btn
+ login-enter"><a href="#">Войти</a></li>
             <li class="user-menu-btn login-reg"><a href="#">Регистрация</a></li>
           </ul>
         </div>
@@ -52,33 +53,50 @@
     </div>
   </header>
   <main>
-    <section class="categories container">
-      <h2 class="visually-hidden">Категории товаров</h2>
-      <ul class="categories-list-leftcol">
-        <li class="categories-item categories-item-materials">
-          <h3>Материалы</h3>
-          <a href="#" class="categories-item-btn">на любой вкус</a>
-        </li>
-        <li class="categories-item categories-item-tools">
-          <h3>Инструмент</h3>
-          <a href="#" class="categories-item-btn">на все случаи</a>
-        </li>
-        <li class="categories-item categories-slider"></li>
-      </ul>
-      <ul class="categories-list-rightcol">
-        <li class="categories-item categories-item-machines">
-          <h3>Техника</h3>
-          <a href="#" class="categories-item-btn">для стройки</a>
-        </li>
-        <li class="categories-item categories-item-sale">
-          <h3>Скидки 50%</h3>
-          <a href="#" class="categories-item-btn">на 350 товаров</a>
-        </li>
-        <li class="categories-item categories-item-delivery">
-          <h3>Доставка</h3>
-          <a href="#" class="categories-item-btn">бесплатно</a>
-        </li>
-      </ul>
+    <section class="categories">
+      <div class="container">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="categories-list-leftcol">
+          <li class="categories-item categories-item-materials item-new">
+            <h3>Материалы</h3>
+            <a href="#" class="categories-item-btn">на любой вкус</a>
+          </li>
+          <li class="categories-item categories-item-tools">
+            <h3>Инструмент</h3>
+            <a href="#" class="categories-item-btn">на все случаи</a>
+          </li>
+          <li class="categories-slider">
+            <div class="categories-slider-slide categories-slider-slide-1">
+              <b>дрели</b>
+              <p>Соседям на радость!</p>
+              <a href="#" class="primary-btn">открыть каталог</a>
+            </div>
+            <div class="categories-slider-slide categories-slider-slide-2">
+              <b>перфораторы</b>
+              <p>Настоящие мужские игрушки</p>
+              <a href="#" class="primary-btn">открыть каталог</a>
+            </div>
+            <input class="categories-slider-toggle-1" type="radio" name="categories-slider-toggle" checked>
+            <input class="categories-slider-toggle-2" type="radio" name="categories-slider-toggle">
+            <button class="categories-slider-btn categories-slider-btn-prev"></button>
+            <button class="categories-slider-btn categories-slider-btn-next"></button>
+          </li>
+        </ul>
+        <ul class="categories-list-rightcol">
+          <li class="categories-item categories-item-machines">
+            <h3>Техника</h3>
+            <a href="#" class="categories-item-btn">для стройки</a>
+          </li>
+          <li class="categories-item categories-item-sale">
+            <h3>Скидки 50%</h3>
+            <a href="#" class="categories-item-btn">на 350 товаров</a>
+          </li>
+          <li class="categories-item categories-item-delivery">
+            <h3>Доставка</h3>
+            <a href="#" class="categories-item-btn">бесплатно</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="popular-goods container">
       <h2 class="visually-hidden">Популярные товары</h2>
@@ -105,7 +123,7 @@
           <span class="goods-old-price">30500 р.</span>
           <a class="popular-goods-price primary-btn" href="#">25500 р.</a>
         </li>
-        <li class="popular-goods-item">
+        <li class="popular-goods-item item-new">
           <img src="img/perforator_1_218x170.jpg" width="218" height="170" alt="BFG 2000">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <span class="goods-old-price"></span>
@@ -169,12 +187,12 @@
             <span>доставка</span>
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,</br> поднимая его на ваш этаж! </p>
+              Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж! </p>
           </div>
           <div class="service-slider-description service-slider-warranty">
             <span>гарантия</span>
             <p>Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</br>
+              а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами. </p>
           </div>
           <div class="service-slider-description service-slider-credit">
@@ -248,28 +266,32 @@
       </div>
     </div>
   </footer>
-  <div class="popup popup-map">
-    <h2 class="visually-hidden">Как к нам попасть</h2>
-    <a href="www.maps.google.com"><img src="img/popup-map.jpg" width="970" height="476" alt="Наш адрес: Санкт-петербург, улица большая конюшенная, дом 19"></a>
-    <button class="popup-close-btn popup-close-btn-map"><span>закрыть</span></button>
+  <div class="popup-modal popup-modal-map">
+    <div class="popup-map-wrap">
+      <h2 class="visually-hidden">Как к нам попасть</h2>
+      <a href="www.maps.google.com">
+        <img src="img/popup-map.jpg" width="940" height="446" alt="Наш адрес: Санкт-петербург, улица большая конюшенная, дом 19">
+      </a>
+      <button class="popup-close-btn">закрыть</button>
+    </div>
   </div>
-  <div class="popup popup-write-us">
-    <form class="write-us" action="https://echo.htmlacademy.ru">
+  <div class="popup-modal popup-write-us">
+    <form class="popup-write-us-form" action="https://echo.htmlacademy.ru">
       <h2 class="visually-hidden">Напишите нам электронное письмо</h2>
-      <p>
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" name="write-us-name" id="write-us-name" placeholder="Имя Фамилия" required>
-      </p>
-      <p>
+      <div class="write-us-name">
+        <label for="write-us-name-label">Ваше имя:</label>
+        <input class="write-us-name-input" type="text" name="write-us-name" id="write-us-name" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="write-us-mail">
         <label for="write-us-mail">Ваш e-mail:</label>
-        <input type="text" name="write-us-mail" id="write-us-mail" placeholder="email@example.com" required>
-      </p>
-      <p>
+        <input class="write-us-mail-input" type="text" name="write-us-mail" id="write-us-mail" placeholder="email@example.com" required>
+      </div>
+      <div class="write-us-text">
         <label for="write-us-text">Текст письма:</label>
-        <textarea rows="5" name="write-us-text" id="write-us-text" placeholder="В свободной форме" required></textarea>
-      </p>
-      <button type="submit">отправить</button>
-      <button class="popup-close-btn popup-close-btn-write-us"><span>закрыть</span></button>
+        <textarea class="write-us-text-area" rows="5" name="write-us-text" id="write-us-text" placeholder="В свободной форме" required></textarea>
+      </div>
+      <button class="write-us-submit primary-btn" type="submit">отправить</button>
+      <button class="popup-close-btn popup-close-btn-write-us">закрыть</button>
     </form>
   </div>
   <script>
