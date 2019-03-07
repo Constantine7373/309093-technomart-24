@@ -38,16 +38,16 @@ if (writeUsClose !== null) {
 
 if (itemBuy !== null) {
   [].forEach.call(itemBuy, function(buy) {
-      buy.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        itemBuyPopup.style.display = "block";
-      })
-    });
-  };
-
-  if (itemBuyPopup !== null) {
-    itemBuyClose.addEventListener("click", function(evt) {
+    buy.addEventListener("click", function(evt) {
       evt.preventDefault();
-      itemBuyPopup.style.display = "none";
+      itemBuyPopup.style.display = "block";
     })
-  };
+  });
+};
+
+if (itemBuyPopup !== null) {
+  itemBuyClose.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    itemBuyPopup.style.display = "none";
+  })
+};
