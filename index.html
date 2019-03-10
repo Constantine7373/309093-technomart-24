@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_minimized.css">
   <title>HTML Academy: Техномарт</title>
 </head>
 
@@ -28,7 +28,7 @@
           <h1 class="header-mid-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
           <div class="header-contacts">
             <a class="header-tel" href="tel:+78125550555" title="Позвонить нам">+7 (812) 555-05-55</a>
-            <p class="header-adress">
+            <p class="header-address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </p>
           </div>
@@ -69,6 +69,8 @@
             <a href="#" class="categories-item-btn">на все случаи</a>
           </li>
           <li class="categories-slider">
+            <input id="categories-slider-toggle-1" class="categories-slider-toggle-1" type="radio" name="categories-slider-toggle" checked>
+            <input id="categories-slider-toggle-2" class="categories-slider-toggle-2" type="radio" name="categories-slider-toggle">
             <div class="categories-slider-slide categories-slider-slide-1">
               <b>дрели</b>
               <p>Соседям на радость!</p>
@@ -79,8 +81,6 @@
               <p>Настоящие мужские игрушки</p>
               <a href="catalog.html" class="primary-btn">открыть каталог</a>
             </div>
-            <input class="categories-slider-toggle-1" type="radio" name="categories-slider-toggle" checked>
-            <input class="categories-slider-toggle-2" type="radio" name="categories-slider-toggle">
             <button class="categories-slider-btn categories-slider-btn-prev"></button>
             <button class="categories-slider-btn categories-slider-btn-next"></button>
           </li>
@@ -201,17 +201,20 @@
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж! </p>
+            <div class="service-slider-delivery-background"></div>
           </div>
           <div class="service-slider-description service-slider-warranty">
             <span>гарантия</span>
-            <p>Если купленный у нас товар поломается или заискрит,
+            <p>Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами. </p>
+            <div class="service-slider-warranty-background"></div>
           </div>
           <div class="service-slider-description service-slider-credit">
             <span>кредит</span>
-            <p>Залезть в долговую яму стало проще!
+            <p>Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.</p>
+            <div class="service-slider-credit-background"></div>
             <a href="#" class="primary-btn credit-btn">отправить заявку</a>
           </div>
         </div>
@@ -245,7 +248,7 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-top">
-        <a class="footer-logo" href="#" title="В начало страницы"><img src="img/logo-technomart.svg" alt="техномарт"></a>
+        <a class="footer-logo" href="#" title="В начало страницы"><img src="img/logo-technomart.svg" alt="техномарт" height="22" width="138"></a>
         <nav class="footer-nav">
           <ul class="footer-nav-list">
             <li class="footer-nav-item"><a href="#">Компания</a></li>
@@ -257,7 +260,7 @@
         </nav>
       </div>
       <div class="footer-mid">
-        <p class="footer-mid-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="footer-mid-tel" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <p class="footer-mid-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="footer-mid-tel" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <ul class="footer-proposal-list">
           <li class="footer-proposal-item"><a href="#">Материалы</a></li>
           <li class="footer-proposal-item"><a href="#">Техника</a></li>
@@ -281,11 +284,9 @@
   </footer>
   <div class="popup-modal popup-modal-map">
     <div class="popup-map-wrap">
-      <!-- 
-      <a href="www.maps.google.com"> --><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1551811588109" width="940" height="446"></iframe>
-      <!-- 
-        <img src="img/popup-map.jpg" width="940" height="446" alt="Наш адрес: Санкт-петербург, улица большая конюшенная, дом 19"> -->
-      <!-- </a> -->
+      <a href="https://goo.gl/maps/8RC4nZA96xj" target="_blank">
+        <img src="img/popup-map.jpg" width="940" height="446" alt="Наш адрес: Санкт-петербург, улица большая конюшенная, дом 19">
+      </a>
       <button class="popup-close-btn close-btn-map">закрыть</button>
     </div>
   </div>
@@ -315,6 +316,7 @@
       <button class="popup-cart-continue popup-close-btn">продолжить покупки</button>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script_minimized.js"></script>
 </body>
+
 </html>
