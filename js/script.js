@@ -40,8 +40,8 @@ if (writeUsClose !== null) {
     evt.preventDefault();
     writeUsForm.classList.remove("modal-show");
     writeUsForm.classList.add("modal-close");
-    writeUsPopup.classList.add("display-none");
-    writeUsPopup.classList.remove("display-block");
+    // writeUsPopup.classList.add("display-none");
+    setTimeout(function f() {writeUsPopup.classList.remove("display-block")},500);
   })
 };
 

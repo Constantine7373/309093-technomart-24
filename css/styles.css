@@ -2483,7 +2483,6 @@ a {
 }
 
 .modal-close {
-  display: none;
   animation: bounce-back 0.6s;
 }
 
@@ -2492,6 +2491,5 @@ a {
 }
 
 .display-none {
-  /*display: none;*/
-  animation: bounce-back 1.6s;
+  display: none;
 }
