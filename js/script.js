@@ -4,13 +4,13 @@ var mapClose = document.querySelector(".close-btn-map");
 var writeUs = document.querySelector(".about-contacts-btn");
 var writeUsPopup = document.querySelector(".popup-write-us")
 var writeUsClose = document.querySelector(".popup-close-btn-write-us");
+var writeUsForm = document.querySelector(".popup-write-us-form");
 var itemBuy = document.querySelectorAll(".catalog-item-popup-buy");
-var itemBuyPopup = document.querySelector(".popup-cart")
+var itemBuyPopup = document.querySelector(".popup-cart");
 var itemBuyClose = document.querySelector(".popup-cart-continue");
 var radToggle = document.getElementsByName("categories-slider-toggle");
 var radButtonNext = document.querySelector(".categories-slider-btn-next");
 var radButtonPrev = document.querySelector(".categories-slider-btn-prev");
-
 if (mapLink !== null) {
   mapLink.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -28,14 +28,20 @@ if (mapClose !== null) {
 if (writeUs !== null) {
   writeUs.addEventListener("click", function(evt) {
     evt.preventDefault();
-    writeUsPopup.style.display = "block";
+    writeUsForm.classList.add("modal-show");
+    writeUsForm.classList.remove("modal-close");
+    writeUsPopup.classList.add("display-block");
+    writeUsPopup.classList.remove("display-none");
   })
 };
 
 if (writeUsClose !== null) {
   writeUsClose.addEventListener("click", function(evt) {
     evt.preventDefault();
-    writeUsPopup.style.display = "none";
+    writeUsForm.classList.remove("modal-show");
+    writeUsForm.classList.add("modal-close");
+    writeUsPopup.classList.add("display-none");
+    writeUsPopup.classList.remove("display-block");
   })
 };
 
@@ -54,16 +60,6 @@ if (itemBuyPopup !== null) {
     itemBuyPopup.style.display = "none";
   })
 };
-
-// if (radToggle !== null) {
-//   for (var i = 0; i < radToggle.length; i++) {
-//     if (radToggle[i].checked) {
-//       var currentToggle = radToggle[i];
-//       var nextToggle = radToggle[i + 1];
-//       radToggle.length = i;
-//     };
-//   };
-// };
 
 radButtonNext.addEventListener("click", function() {
   if (radToggle !== null) {
